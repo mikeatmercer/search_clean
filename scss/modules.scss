@@ -1,0 +1,163 @@
+.ms-mod {
+  width: 100%;
+  &--right-col {
+    margin-bottom: 24px;
+  }
+  &-top-label {
+    padding-left: (-$left-module-negative-margin);
+    margin-bottom: 8px;
+    > * {
+      display:inline-block;
+      font-size: small;
+    }
+  }
+  &-header {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: normal;
+    &--nomargin {
+      margin-bottom: 0;
+    }
+  }
+  &-convos {
+    display:flex;
+    &-li {
+      color:inherit;
+      flex: 1;
+      &:not(:first-child) {
+        margin-left: 8px;
+      }
+      &-top {
+        display: flex;
+        padding: 0px 16px;
+        border-bottom: 1px solid $onyx-10;
+        align-items: center;
+        height: 74px;
+        &-meta {
+          padding-left: 16px;
+          flex: 1;
+          min-width: 0;
+          &-name {
+            font-size: 16px;
+            //font-weight: bold;
+            line-height: 1.2;
+            margin: 0 0 4px 0;
+            max-height: 43.2px;
+            overflow: hidden;
+            color: $sapphire-medium;
+          }
+        }
+      }
+      &-text {
+        padding: 16px;
+        font-size:small;
+      }
+    }
+
+  }
+  &--news {
+    color: $onyx-medium;
+  }
+  &-news {
+    &-con {
+      padding:20px;
+    }
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    &-title {
+      line-height: 1.2;
+
+      color: $sapphire-medium;
+    }
+    &-info {
+      font-size:14px;
+    }
+  }
+  &-news-items {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    &-col {
+      width: calc(50% - 24px);
+    }
+  }
+  &-right-col {
+    &-header {
+      padding: 24px;
+    }
+    &-desc {
+      font-size: 14px;
+      padding: 0 24px 24px 24px;
+      line-height: 1.5;
+    }
+    &-list {
+      padding: 0 24px 24px 24px;
+      &-li {
+        margin-bottom: 16px;
+      }
+    }
+    &-sp-card {
+      &-tabs {
+        display:flex;
+        border: 1px solid $onyx-10;
+        border-width: 1px 0;
+        &-tab {
+          flex: 1;
+          position:relative;
+          &-button {
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            color: $sapphire-medium;
+            text-align:center;
+            position:relative;
+            &:hover {
+              background: $flat-hover;
+            }
+            &--selected {
+              &:after {
+                display:block;
+                content:'';
+                position:absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background:$sapphire-bright;
+              }
+            }
+          }
+        }
+      }
+      &-doc-list {
+        display:flex;
+        width: 100%;
+        &-ul {
+          &:first-child {
+            margin-right: 48px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          &-li {
+            margin-bottom: 12px;
+          }
+        }
+      }
+      &-tab-content {
+        padding: 24px 24px 36px 24px;
+        &--no-top-padding {
+          padding-top: 0;
+        }
+        &-contacts {
+          &-li {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}

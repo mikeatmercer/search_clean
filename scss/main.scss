@@ -1,0 +1,68 @@
+@import 'normalize.scss';
+@import 'variables.scss';
+@import 'utilities.scss';
+@import 'gl-btn.scss';
+@import 'gl-filter-dropdown.scss';
+@import 'gl-pill.scss';
+@import 'gl-avatar.scss';
+@import 'gl-card.scss';
+@import 'hr_callout.scss';
+body {
+	font-family: Arial, sans-serif;
+	background: white;
+	font-size: 16px;
+}
+
+svg , img{
+	display:block;
+	fill: currentColor;
+}
+strong {
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+	color: $sapphire-medium;
+	&:hover {
+		text-decoration: underline;
+	}
+	&.a--no-u {
+		text-decoration: none !important;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	> a {
+		color:inherit;
+	}
+}
+
+footer {
+	background: $onyx-6;
+	border-top: 1px solid rgba(black,.2);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	margin-top: 48px;
+}
+
+
+@import 'sticky-wrap.scss';
+@import 'header.scss';
+@import 'feedback-callout.scss';
+@import 'main-scaffold.scss';
+@import 'result-meta.scss';
+@import 'filter-list.scss';
+@import 'ms-active-filters.scss';
+@import 'list-results.scss';
+@import 'info-bar.scss';
+@import 'ms-doc-icon.scss';
+@import 'modules.scss';
+@import 'didyoumean.scss';
+
+@import 'loading.scss';
+
+
+///FOR DEMO UI only
+@import 'ui-demo.scss';

@@ -1,0 +1,34 @@
+.gl-card {
+  $bottom-bar-height: 56px;
+  display:block;
+  background: white;
+  border-top: 2px solid $sapphire-bright;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.02), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 6px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  position: relative;
+  &--hoverable {
+    transition: box-shadow .25s ease-in-out;
+    &:hover {
+      box-shadow: 0 -1px 6px 0 rgba(0,0,0,.02),0 1px 12px 0 rgba(0,0,0,.1),0 4px 5px 0 rgba(0,0,0,.12);
+    }
+  }
+  &--w-bottom-bar {
+    padding-bottom:$bottom-bar-height;
+  }
+  &-bottom-bar {
+    width: 100%;
+    height: $bottom-bar-height;
+    padding: 0 12px;
+    border-top: 1px solid $onyx-10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    > * {
+      &:not(:first-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+}
