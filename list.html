@@ -1,6 +1,6 @@
 
 
-<include src="./header.html" htmlclasses="" mainclass="list-view"></include>
+<include src="./header.html" htmlclasses="" title="List View" mainclass="list-view"></include>
 
 <div class="ms-l-filters" >
   <include src="./filter-dropdown.html" filtername="File Type" active="" ></include>
@@ -12,19 +12,11 @@
   <include src="./filter-dropdown.html" filtername="Asset Type" active="--disabled" ></include>
 
 </div>
-<div class="ms-result-meta ms-result-meta--list-view u-sm-label">1 &ndash; 25 of 25,123 results for &ldquo;Gail Evans&rdquo;</div>
+<include src="./result-count.html"></include>
 <main class="ms-main ms-main--list-view">
 <div class="ms-main-l-left-col">
 
-  <div class="ms-active-filters ms-active-filters--list-view" id="activeFilterList" style="display:none;">
-    <span class="ms-active-filters-label u-sm-label">Filtering by: </span>
-    <ul class="ms-active-filters-ul">
-        <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">Internal Use Only</span>  <include src="./svg_x.html" ></include> </button></li>
-        <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">United States</span><include src="./svg_x.html" ></include> </button></li>
-        <li class="ms-active-filters-ul-li"><button class="ms-active-filters-ul-li-btn gl-pill"> <span class="gl-pill-text">Mercer Penion Risk Exchange</span> <include src="./svg_x.html" ></include> </button></li>
-
-    </ul>
-  </div>
+  <include src="./active-filters.html"></include>
   
   <include src="./module_didyoumean.html"></include>
   <ul class="ms-sr">
@@ -179,6 +171,7 @@
     <li class="ghost-result" style="display:none;"></li>
 
   </ul>
+  <include src="./pagination.html"></include>
 
 </div>
 <div class="ms-main-l-right-col">

@@ -1,0 +1,39 @@
+.gl-pg {
+    &-container {
+        display:flex; 
+        justify-content: center;
+    }
+    &-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold; 
+        color: $onyx-medium;
+        margin: 0 2px;
+        &-current {
+          background: $onyx-6;
+          color: $helper-text;  
+          pointer-events:none; 
+        }
+        &:hover {
+            background: $flat-hover; 
+            color: $sapphire-medium;
+        }
+        &-arrow {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            > svg {
+                width: 24px;
+                height: 24px;
+            }
+            &:last-child {
+                > svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

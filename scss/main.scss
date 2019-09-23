@@ -6,11 +6,16 @@
 @import 'gl-pill.scss';
 @import 'gl-avatar.scss';
 @import 'gl-card.scss';
+@import 'gl-pagination.scss';
+@import 'gl-footer.scss';
 @import 'hr_callout.scss';
+@import 'ms-grid-filter.scss';
+@import 'ms-view-switch.scss';
 body {
 	font-family: Arial, sans-serif;
 	background: white;
 	font-size: 16px;
+	padding-bottom: 38px;
 }
 
 svg , img{
@@ -37,15 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 
-footer {
-	background: $onyx-6;
-	border-top: 1px solid rgba(black,.2);
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	height: 200px;
-	margin-top: 48px;
-}
+
 
 
 @import 'sticky-wrap.scss';

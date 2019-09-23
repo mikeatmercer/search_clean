@@ -1,0 +1,69 @@
+.ms-grid-filter {
+    margin-bottom: 36px;
+    &-title {
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1;
+        color: $helper-text; 
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        padding: 0 24px 8px 24px;
+    }
+    &-options {
+        > a {
+            display:flex;
+            position: relative;
+            padding: 8px 24px 8px 48px;
+            align-items: flex-end;
+            justify-content: space-between;
+            &:hover {
+                background: $flat-hover;
+                text-decoration: none; 
+                &:after {
+                    display:block;
+                    content:"";
+                    position:absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    background: $highlight-color;
+                }
+            }
+            &.selected {
+                > svg {
+                    color: black;
+                    width: 14px;
+                    height: 14px;
+                    position:absolute;
+                    left: 24px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+    &-show-more {
+        display:flex;
+        padding: 8px;
+        border-radius: 2px;
+        color: $link-color; 
+        font-size: 16px;
+        align-items: center;
+        > svg {
+            margin-left: 4px;
+            width: 18px;
+            height: 18px;
+            color: black;
+            transform: rotate(-90deg);
+        }
+        &:hover {
+            background: $flat-hover;
+        }
+        &-container {
+            display:flex;
+            justify-content: flex-start;
+            padding: 16px 24px 8px 40px;
+        }
+        
+    }
+}

@@ -1,0 +1,41 @@
+<include src="./header.html" htmlclasses="grid-view" title="People View" mainclass="grid-view"></include>
+
+<main class="ms-main ms-main--grid-view">
+    <div class="ms-main--grid-view-filter-bar">
+        <include src="./grid-filter.html" title="Title">
+            <a href="#"><span class="title">Senior Associate</span><span class="number">(44)</span></a>
+            <a href="#" class="selected"><svg class="mm-filter-checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span class="title">Principal</span><span class="number">(4,323)</span></a>
+            <a href="#"><span class="title">Partner</span><span class="number">(24)</span></a>
+        </include>
+        <include src="./grid-filter.html" title="LOB/Function">
+            <a href="#"><span class="title">Health</span><span class="number">(44)</span></a>
+            <a href="#"><span class="title">Wealth</span><span class="number">(4,323)</span></a>
+            <a href="#"><span class="title">Career</span><span class="number">(24)</span></a>
+            <a href="#"><span class="title">Marketing &amp; Sales</span><span class="number">(16)</span></a>
+            <a href="#"><span class="title">Legal</span><span class="number">(1)</span></a>
+            <div class="ms-grid-filter-show-more-container">
+                    <button class="ms-grid-filter-show-more"><span>Show More</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/><path fill="none" d="M0 0h24v24H0V0z"/></svg></button>
+            </div>
+            
+        </include>
+        <include src="./grid-filter.html" title="Country">
+            <a href="#"><span class="title">United States</span><span class="number">(44)</span></a>
+            <a href="#"><span class="title">Canada</span><span class="number">(4,323)</span></a>
+            <a href="#"><span class="title">United Kingdom</span><span class="number">(24)</span></a>
+      
+        </include>
+
+    </div>
+    <div class="ms-main--grid-view-content-area">
+            <include src="./result-count.html"></include>
+            <div class="ms-main--grid-view-top-controls">
+                <include src="./active-filters.html"></include>
+                <include src="./ms-view-switch.html" grid="active" ></include>
+            </div>
+    </div>
+
+</main>
+
+
+<include src="./footer.html"></include>
