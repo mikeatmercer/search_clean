@@ -1,0 +1,37 @@
+.ms-p-card {
+    $padding: 24px;
+    color: black;
+    &-top {
+        display:flex;
+        align-items: center;
+        padding: $padding;
+        &-meta {
+            flex: 1;
+            padding-left: 16px; 
+            min-width: 0;
+        }
+    }
+    
+    &-name {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    &-title {
+        padding: 0 $padding;
+        height: 2.3em;
+        overflow: hidden;
+    }
+    &-info {
+        border-top: 1px solid $light-grey-border;
+        margin-top: ($padding / 2);
+        padding: $padding;
+        line-height: (24 / 16);
+    }
+    &-email {
+        color: $link-color; 
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

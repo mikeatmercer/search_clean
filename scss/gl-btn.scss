@@ -37,4 +37,10 @@
     line-height: (22/14);
     padding:4px 12px;
   }
+  &--large {
+    min-width: 184px;
+    padding: 0 24px;
+    line-height: 58px;
+    font-size: 18px;
+  }
 }
