@@ -1,5 +1,5 @@
 .ms-grid-filter {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
     &-title {
         font-size: 12px;
         font-weight: bold;
@@ -11,44 +11,47 @@
     }
     &-options {
         > a {
-            display:flex;
             position: relative;
-            padding: 12px 24px 12px 48px;
-            align-items: flex-end;
-            justify-content: space-between;
+            padding: 0 24px 0 (24px + 22px );
+            
+            display: block;
+            font-size: 14px;
+            line-height: 1.2;
+            margin-bottom: 4px;
+            .title {
+                margin-right: 6px;
+            }
             &:hover {
-                background: $flat-hover;
-                text-decoration: none; 
-                &:after {
-                    display:block;
-                    content:"";
-                    position:absolute;
-                    left: 0;
-                    top: 0;
-                    height: 100%;
-                    width: 2px;
-                    background: $highlight-color;
+                text-decoration: none;
+                .title {
+                    text-decoration: underline;
+                  
                 }
+                svg {
+                    color: $link-color;
+                }
+            }
+            svg {
+                position:absolute;
+                left: 24px;
+                width: 16px;
+                height: 16px;
+                top: 0px;
+                color: $helper-text;
             }
             &.selected {
                 > svg {
-                    color: black;
-                    width: 14px;
-                    height: 14px;
-                    position:absolute;
-                    left: 24px;
-                    top: 10px;
+                    color: $link-color;
                 }
             }
         }
     }
     &-show-more {
         display:flex;
-        padding: 8px;
-        border-radius: 2px;
         color: $link-color; 
-        font-size: 16px;
+        font-size: 14px;
         align-items: center;
+        line-height: 1;
         > svg {
             margin-left: 4px;
             width: 18px;
@@ -57,12 +60,12 @@
             transform: rotate(-90deg);
         }
         &:hover {
-            background: $flat-hover;
+            text-decoration: underline;
         }
         &-container {
             display:flex;
             justify-content: flex-start;
-            padding: 16px 24px 8px 40px;
+            padding: 4px 24px 0 24px;
         }
         
     }

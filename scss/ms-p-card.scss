@@ -1,37 +1,105 @@
 .ms-p-card {
-    $padding: 24px;
+    $padding: 8px;
     color: black;
+    padding: 0 0 8px;
+    border-bottom: 2px solid $light-grey-border;
+    position:relative;
+    //border: 1px solid $light-grey-border;
+    //border-radius: 6px;
+    $maskClass: #{&}-link-mask;
+    @at-root {
+        #{$maskClass} {
+            position:absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            
+        }
+    }
+    
+    
+    > *:not(#{$maskClass}) {
+        position:relative;
+       // background: red;
+    }  
+    &--doc {
+        padding-top: 12px;
+    }
+    $noflag: #{&}--doc__noflag;
     &-top {
-        display:flex;
-        align-items: center;
-        padding: $padding;
+        /*display:flex;
+        justify-content: center;*/
+        padding-bottom: $padding;
         &-meta {
             flex: 1;
             padding-left: 16px; 
             min-width: 0;
         }
+        &--doc {
+            padding-top: 8px;
+            &__noflag {
+                
+            }
+        }
     }
+
+    
     
     &-name {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
         line-height: 1;
+        color: black;
+        display:block;
+        position: relative;
+        z-index: 1;
     }
     &-title {
-        padding: 0 $padding;
-        height: 2.3em;
-        overflow: hidden;
+        padding: 0 ;
+        font-size: 14px;
     }
     &-info {
-        border-top: 1px solid $light-grey-border;
-        margin-top: ($padding / 2);
-        padding: $padding;
+        padding: $padding 0 0 ;
         line-height: (24 / 16);
     }
+    &-department {
+        font-size: 13px;
+        
+        &.location {
+            color: $helper-text;
+        }
+    }
     &-email {
+        font-size:small;
         color: $link-color; 
+        position:relative;
+        z-index:1;
         &:hover {
             text-decoration: underline;
         }
     }
+    &-profile-link {
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 16px;
+        white-space: nowrap;
+    }
+    &-doc-type {
+        margin-bottom: 4px;
+        #{$noflag} & {
+            opacity: 0;
+            &:after {
+                content:"blank";
+            }
+        }
+        
+    }
+    &-doc-meta {
+        padding-top: 8px;
+        
+    }
+    
 }

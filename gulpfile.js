@@ -7,7 +7,7 @@ var gulp = require("gulp"),
     dir = "W:\\";
 
 gulp.task("html",function() {
-    return gulp.src(["list.html", "people.html"])
+    return gulp.src(["list.html", "people.html","documents.html"])
         .pipe(fileinclude())
         .pipe(gulp.dest(dir));
 })
